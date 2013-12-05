@@ -1,0 +1,78 @@
+body {
+  font-family: 'Nixie One', cursive;
+  background: #333;
+  color: white;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 125px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  z-index: 999;
+}
+
+.disappear {
+  transition: 200ms ease;
+}
+
+.welcomecont {
+  text-align: center;
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 3em;
+}
+
+img {
+  z-index: 2;
+  height: 100%;
+  overflow: auto;
+}
+
+.caption {
+  z-index: 4;
+  position: absolute;
+  top: 90%;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 360px) {
+  .header {
+    height: 70px;
+  }
+}
+.photo1 {
+  background: url(http://25.media.tumblr.com/38a10dbeb8520e5d8945ab0ec93db7d8/tumblr_mwhd4eXiB51st5lhmo1_1280.jpg) no-repeat;
+  background-size: cover;
+}
+
+.photo2 {
+  background: url(http://25.media.tumblr.com/d43bd873fd5c0b05c48b68ba0a0b2c37/tumblr_mwhd396nl71st5lhmo1_1280.jpg) no-repeat;
+  background-size: cover;
+}
+
+.photo3 {
+  background: url(http://24.media.tumblr.com/03348d7e90465592edc8446075c20493/tumblr_mx3toqF8VU1st5lhmo1_1280.jpg) no-repeat;
+  background-size: cover;
+}
+
+.photo4 {
+  background: url(http://25.media.tumblr.com/88b812f5f9c3d7b83560fd635435d538/tumblr_mx3tlblmY21st5lhmo1_1280.jpg) no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title>Our Photo Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap.full.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/onepage-scroll.css" media="all">
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection">
+    <![endif]-->
+</head>
+<body>
+
+<div class="main">
+
+    <section class="photo1"><!-- <img src="http://25.media.tumblr.com/38a10dbeb8520e5d8945ab0ec93db7d8/tumblr_mwhd4eXiB51st5lhmo1_1280.jpg" alt=""> -->
+        <div class="welcomecont">
+        <p class="welcome">Welcome to our Photo Gallery</p>
+    </div>
+        <p class="caption">Dogs in the grass | 2010 | Nikon D7000 dSLR</p>
+    </section>
+    <section class="photo2"><!-- <img src="http://25.media.tumblr.com/d43bd873fd5c0b05c48b68ba0a0b2c37/tumblr_mwhd396nl71st5lhmo1_1280.jpg" alt=""> -->
+        <p class="caption">American Stonehenge | 2013 | Fujifilm X-E2</p>
+    </section>
+    <section class="photo3"><!-- <img src="http://24.media.tumblr.com/03348d7e90465592edc8446075c20493/tumblr_mx3toqF8VU1st5lhmo1_1280.jpg" alt=""> -->
+        <p class="caption">The Ebbing Tide | 2011 | Canon PowerShot SX170</p>
+    </section>
+    <section class="photo4"><!-- <img src="http://25.media.tumblr.com/88b812f5f9c3d7b83560fd635435d538/tumblr_mx3tlblmY21st5lhmo1_1280.jpg" alt=""> -->
+        <p class="caption">Beacon of Hope | 2009 | Canon PowerShot SX170</p>
+    </section>
+</div>
+
+    <div class="header">Our Photo Portfolio</div>
+
+    <!-- <div class="welcomecont">
+        <p class="welcome">Welcome to our Photo Gallery</p>
+    </div> -->
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="/js/jquery.onepage-scroll.js"></script>
+<script>
+$(function() {
+    $(".main").onepage_scroll({
+   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 700, // AnimationTime let you define how long each section takes to animate
+   pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+   beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
+   loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   responsiveFallback: false // You can fallback to normal page scroll by defining the width of the browser in which you want the responsive fallback to be triggered. For example, set this to 600 and whenever the browser's width is less than 600, the fallback will kick in.
+    });
+    $('.header').mouseover(function() {
+        $(this).addClass('disappear');
+  });
+});
+</script>
+</body>
+</html>
