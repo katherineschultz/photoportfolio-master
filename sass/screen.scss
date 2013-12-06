@@ -17,12 +17,13 @@ body {
     text-align: center;
     font-size: 2.5em;
     z-index: 999;
+    cursor: pointer;
 }
 
 .disappear {
-    transition: 200ms ease;
-    // position: fixed;
-    // top: -200px;
+    opacity: 0;
+    transition: all;
+    transition-duration: 250ms;
 }
 
 .welcomecont {
@@ -54,6 +55,7 @@ img {
     border-radius: 10px;
     font-size: 1.2em;
 }
+
 
 @media screen and (min-width: 360px) {
     .header {
